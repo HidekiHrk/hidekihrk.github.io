@@ -58,6 +58,21 @@ a#nick:hover {
     color: #ccc;
 }
 
+p#name {
+    color: #eee;
+    text-shadow: 2px 2px 2px #0009;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+p#name:hover {
+    color: #ccc;
+}
+
 div#card {
     background: linear-gradient(to bottom, rgb(0, 179, 104), #00665f);
     padding: 20px;
@@ -87,6 +102,8 @@ a.contactIcon {
 
 a.contactIcon i {
     transition: transform 0.3s ease, text-shadow 0.3s ease;
+    font-size: 30px;
+    margin-right: 3px !important;
 }
 
 a.contactIcon i:hover {

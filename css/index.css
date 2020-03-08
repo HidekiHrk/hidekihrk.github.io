@@ -6,17 +6,19 @@ html, body {
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background-color: black;
+    background: url('../img/bg2.jpg');
+    background-repeat: repeat;
+    background-size: 60%;
 }
 
 div#bgImage {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-image: url('../img/bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: blur(4px) hue-rotate(60deg);
+    background-repeat: repeat;
+    background: linear-gradient(to bottom, rgb(0, 216, 126), #00a59a);
+    mix-blend-mode: multiply;
+    background-size: 60%;
 }
 
 div#body {
@@ -29,13 +31,14 @@ div#body {
 div#body div#main{
     background-color: #eee;
     border-radius: 10px;
+    border: 3px solid #eee;
 }
 
 img#avatar {
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 260px;
+    max-height: 260px;
     border-radius: 50%;
-    border: 6px double #99ffbb;
+    border: 6px solid #eee;
     box-shadow: 5px 2.5px 2px #0009;
     user-select: none;
     -webkit-user-select: none;
@@ -43,26 +46,51 @@ img#avatar {
     -moz-user-select: none;
 }
 
-a#name {
-    color: #99ffbb;
+a#nick {
+    color: #eee;
     text-shadow: 2px 2px 2px #0009;
-    font-size: 45px;
+    font-size: 40px;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-a#name:hover {
-    color: #55bb77;
+a#nick:hover {
+    color: #ccc;
 }
 
 div#card {
-    background-color: #124;
+    background: linear-gradient(to bottom, rgb(0, 179, 104), #00665f);
     padding: 20px;
     border-radius: 10px 0px 0px 10px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+
+div#card:hover {
+    transform: translateY(-10px);
+    border-radius: 10px;
+    box-shadow: 0px 10px 1px #0004;
 }
 
 div#info {
     padding: 20px;
     width: 300px;
     font-size: 20px;
+    text-shadow: 2px 2px 1px #3332;
+}
+
+a.contactIcon {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+a.contactIcon i {
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+a.contactIcon i:hover {
+    transform: translateY(-3px);
+    text-shadow: 2px 5px 1px #3332;
+
 }

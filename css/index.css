@@ -1,0 +1,68 @@
+* {
+    font-family: 'Oxanium', cursive;
+}
+html, body {
+    margin:0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+div#bgImage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px) hue-rotate(60deg);
+}
+
+div#body {
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+div#body div#main{
+    background-color: #eee;
+    border-radius: 10px;
+}
+
+img#avatar {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    border: 6px double #99ffbb;
+    box-shadow: 5px 2.5px 2px #0009;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+a#name {
+    color: #99ffbb;
+    text-shadow: 2px 2px 2px #0009;
+    font-size: 45px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a#name:hover {
+    color: #55bb77;
+}
+
+div#card {
+    background-color: #124;
+    padding: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+div#info {
+    padding: 20px;
+    width: 300px;
+    font-size: 20px;
+}

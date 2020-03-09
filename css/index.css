@@ -52,6 +52,8 @@ a#nick {
     font-size: 40px;
     text-decoration: none;
     transition: color 0.3s ease;
+    padding: 0;
+    margin: 0;
 }
 
 a#nick:hover {
@@ -75,7 +77,7 @@ p#name:hover {
 
 div#card {
     background: linear-gradient(to bottom, rgb(0, 179, 104), #00665f);
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     border-radius: 10px 0px 0px 10px;
     transition: transform 0.6s ease, box-shadow 0.6s ease, border-radius 0.6s ease;
 }
@@ -87,10 +89,15 @@ div#card:hover {
 }
 
 div#info {
-    padding: 20px;
-    width: 300px;
+    padding: 3px 20px;
+    /* width: 300px; */
     font-size: 20px;
     text-shadow: 2px 2px 1px #3332;
+}
+
+div#info p {
+    padding:0;
+    margin-bottom:15px;
 }
 
 a.contactIcon {

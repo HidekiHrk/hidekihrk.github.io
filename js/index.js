@@ -22,7 +22,7 @@ function renderProfile(){
             });
         }
     };
-    userApiReq.open('get', 'https://api.github.com/users/HidekiHrk', false);
+    userApiReq.open('get', 'https://api.github.com/users/HidekiHrk', true);
     userApiReq.send();
 }
 

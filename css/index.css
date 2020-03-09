@@ -4,40 +4,55 @@
 html, body {
     margin:0;
     padding: 0;
-}
-
-div#bgImage {
-    position: absolute;
-    width: 100%;
     height: 100%;
-    background: url('../img/bg.jpg'), linear-gradient(to bottom, rgb(0, 216, 126), #00a59a);
+    width: 100%;
+    background: url('../img/bg.jpg'), linear-gradient(to bottom, rgb(0, 216, 126), #00a59a, rgb(0, 216, 126));
     background-blend-mode: multiply;
     background-repeat: repeat;
     background-size: 60%;
     animation: bg-move 3000s linear infinite;
+    scroll-behavior: smooth;
+    /* mix-blend-mode: lighten; */
 }
 
 @keyframes bg-move {
     0%, 100% {
         background-position-x: 0vw;
+        background-position-y: 0vh;
     }
     50% {
         background-position-x: 1000vw;
+        background-position-y: 1000vh;
     }
 }
 
 div#body {
-    z-index: 2;
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
+    /* mix-blend-mode: multiply; */
+    /* z-index: 0; */
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
 }
 
 div#body div#main{
     background-color: #eee;
     border-radius: 10px;
     border: 3px solid #eee;
+    display: flex !important;
+    margin: 5% 20%;
+    animation: float 5s ease-in-out infinite;
 }
+
+@keyframes float {
+    0%, 100% {
+        box-shadow: 0px 0px 2px #0009;
+    }
+    50% {
+        transform: translateY(-8px);
+        box-shadow: 0px 10px 2px #0009;
+    }
+}
+
 
 img#avatar {
     max-width: 260px;
@@ -95,7 +110,9 @@ div#card:hover {
 
 div#info {
     padding: 3px 20px;
-    width: 300px;
+    background-color: #eee;
+    /* height: 100vh; */
+    max-width: 300px;
     font-size: 20px;
     text-shadow: 2px 2px 1px #3332;
 }
@@ -118,4 +135,27 @@ a.iconLink {
 a.iconLink:hover {
     transform: translateY(-3px) !important;
     text-shadow: 2px 5px 1px #3332 !important;
+}
+
+footer {
+    background-color: #eee;
+    font-size: 25px;
+    padding: 5px 15px;
+    margin: 0;
+    border-radius: 50px;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer:hover {
+    opacity: 1;
 }

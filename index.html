@@ -10,6 +10,7 @@
     <link id="favicon" rel="shortcut icon" href="https://avatars2.githubusercontent.com/u/28986294?v=4" type="image/x-icon">
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-mfizz-2.4.1/font-mfizz.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -22,26 +23,63 @@
                 <p id="name"></p>
             </div>
             <div id="info" class="d-flex flex-column align-items-left">
-                <p><i class="fas fa-user-friends text-info"></i> Seguidores: <a id="followers"></a></p>
-                <p><i class="fas fa-user-friends text-success"></i> Seguindo: <a id="following"></a></p>
-                <p><i class="fas fa-folder-open text-primary"></i> Repositórios: <a id="public_repos"></a></p>
+                <p><i class="fas fa-user-friends text-info"></i> Followers: <a id="followers"></a></p>
+                <p><i class="fas fa-user-friends text-success"></i> Following: <a id="following"></a></p>
+                <p><i class="fas fa-folder-open text-primary"></i> Repositories: <a id="public_repos"></a></p>
                 <p><i class="fas fa-file-code text-secondary"></i> Gists: <a id="public_gists"></a></p>
-                <p><i class="fas fa-building" style="color: #523;"></i> Organização: <span id="company"></span></p>
-                <p><i class="fas fa-map-marker-alt text-danger"></i> Localização: <a id="location"></a></p>
-                <p class="m-0 p-0"><i class="fas fa-address-card"></i> Contato: </p>
+                <p><i class="fas fa-map-marker-alt text-danger"></i> Location: <a id="location"></a></p>
+                <p class="m-0 p-0"><i class="fas fa-code" style="color: #523;"></i> Skills: <span id="company"></span></p>
+                <div class="d-flex align-items-center m-0 p-0">
+                    <!-- Js -->
+                    <a class="iconLink" href="https://js.org/"><i class="fab fa-js-square" style="color: rgb(221, 136, 8);"></i></a>
+                    <!-- NodeJs -->
+                    <a class="iconLink" href="https://nodejs.org/en/"><i class="fab fa-node-js text-success"></i></a>
+                    <!-- ReactJs -->
+                    <a class="iconLink" href="https://pt-br.reactjs.org/"><i class="fab fa-react text-info"></i></a>
+                    <!-- Python -->
+                    <a class="iconLink" href="https://www.python.org/"><i class="fab fa-python" style="color:rgb(221, 136, 8);"></i></i></a>
+                    <!-- Php -->
+                    <a class="iconLink" href="https://www.php.net/"><i class="fab fa-php" style="color: #6A7FC9;"></i></a>
+                    <!-- Ruby -->
+                    <a class="iconLink" href="https://www.ruby-lang.org/pt/"><i class="icon-ruby text-danger"></i></a>
+                    <!-- C# -->
+                    <a class="iconLink" href="https://docs.microsoft.com/pt-br/dotnet/csharp/"><i class="icon-csharp text-success"></i></a>
+                    <!-- C++ -->
+                    <a class="iconLink" href="http://www.cplusplus.org/"><i class="icon-cplusplus text-info"></i></a>
+                </div>
+                <div class="d-flex align-items-center m-0 p-0">
+                    <!-- HTML5 -->
+                    <a class="iconLink" href="https://html5.org/"><i class="icon-html5-alt text-danger"></i></a>
+                    <!-- CSS3 -->
+                    <a class="iconLink" href="https://www.w3.org/Style/CSS/"><i class="icon-css3-alt text-primary"></i></a>
+                    <!-- ShellScript -->
+                    <a class="iconLink" href="https://www.shellscript.sh/"><i class="icon-script text-dark"></i></a>
+                    <!-- Java -->
+                    <a class="iconLink" href="https://www.java.com/"><i class="fab fa-java text-danger"></i></a>
+                    <!-- Linux -->
+                    <a class="iconLink" href="https://www.linuxfoundation.org/"><i class="fab fa-linux text-secondary"></i></a>
+                    <!-- Sql -->
+                    <a class="iconLink" href="https://www.sql.org/"><i class="fas fa-database text-dark"></i></a>
+                    <!-- Jquery -->
+                    <a class="iconLink" href="https://jquery.com/"><i class="icon-jquery text-info"></i></a>
+                    <!-- BootsTrap -->
+                    <a class="iconLink" href="https://jquery.com/"><i class="icon-bootstrap" style="color: rgb(155, 70, 204);"></i></a>
+
+                </div>
+                <p class="m-0 p-0"><i class="fas fa-address-card"></i> Contacts: </p>
                 <div class="d-flex align-items-center m-0 p-0">
                     <!-- Github -->
-                    <a class="contactIcon" href="https://github.com/HidekiHrk"><i class="fab fa-github-square text-body"></i></a>
+                    <a class="iconLink" href="https://github.com/HidekiHrk"><i class="fab fa-github-square text-body"></i></a>
                     <!-- Twitter -->
-                    <a class="contactIcon" href="https://twitter.com/hidekihrk"><i class="fab fa-twitter-square text-primary"></i></a>
+                    <a class="iconLink" href="https://twitter.com/hidekihrk"><i class="fab fa-twitter-square text-primary"></i></a>
                     <!-- Email -->
-                    <a class="contactIcon" href="mailto:hidekihiroki123@gmail.com"><i class="fas fa-envelope-square text-danger"></i></a>
+                    <a class="iconLink" href="mailto:hidekihiroki123@gmail.com"><i class="fas fa-envelope-square text-danger"></i></a>
                     <!-- LinkedIn -->
-                    <a class="contactIcon" href="https://www.linkedin.com/in/rayan-santos-600311181/"><i class="fab fa-linkedin text-info"></i></a>
+                    <a class="iconLink" href="https://www.linkedin.com/in/rayan-santos-600311181/"><i class="fab fa-linkedin text-info"></i></a>
                     <!-- DiscordServer -->
-                    <a class="contactIcon" href="https://discord.gg/R7Se5QQ"><i class="fab fa-discord" style="color: #6A7FC9; margin-top: 10%;"></i></a>
+                    <a class="iconLink" href="https://discord.gg/R7Se5QQ"><i class="fab fa-discord" style="color: #6A7FC9; margin-top: 10%;"></i></a>
                     <!-- Steam -->
-                    <a class="contactIcon" href="https://steamcommunity.com/id/hidekihiroki"><i class="fab fa-steam-square text-dark"></i></a>
+                    <a class="iconLink" href="https://steamcommunity.com/id/hidekihiroki"><i class="fab fa-steam-square text-dark"></i></a>
                 </div>
             </div>
         </div>

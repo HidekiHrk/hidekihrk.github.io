@@ -85,31 +85,27 @@ div#card:hover {
 
 div#info {
     padding: 3px 20px;
-    /* width: 300px; */
+    width: 300px;
     font-size: 20px;
     text-shadow: 2px 2px 1px #3332;
 }
 
 div#info p {
     padding:0;
-    margin-bottom:15px;
+    margin-bottom:4px;
 }
 
-a.contactIcon {
+a.iconLink {
     user-select: none;
     -webkit-user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
-}
-
-a.contactIcon i {
-    transition: transform 0.3s ease, text-shadow 0.3s ease;
-    font-size: 30px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease !important;
+    font-size: 30px !important;
     margin-right: 3px !important;
 }
 
-a.contactIcon i:hover {
-    transform: translateY(-3px);
-    text-shadow: 2px 5px 1px #3332;
-
+a.iconLink:hover {
+    transform: translateY(-3px) !important;
+    text-shadow: 2px 5px 1px #3332 !important;
 }

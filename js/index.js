@@ -4,7 +4,7 @@ function renderProfile(){
     let nick = document.querySelector('a#nick');
     let name = document.querySelector('p#name');
 
-    let infoQueries = ['followers', 'following', 'public_repos', 'public_gists', 'company', 'location']
+    let infoQueries = ['followers', 'following', 'public_repos', 'public_gists', 'location']
         .map(q => document.querySelector(`#${q}`));
     let userApiReq = new XMLHttpRequest();
     userApiReq.onreadystatechange = function(ev) {

@@ -4,20 +4,15 @@
 html, body {
     margin:0;
     padding: 0;
-    width: 100vw;
-    height: 100vh;
-    background: url('../img/bg.jpg');
-    background-repeat: repeat;
-    background-size: 60%;
 }
 
 div#bgImage {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bg.jpg'), linear-gradient(to bottom, rgb(0, 216, 126), #00a59a);
+    background-blend-mode: multiply;
     background-repeat: repeat;
-    background: linear-gradient(to bottom, rgb(0, 216, 126), #00a59a);
-    mix-blend-mode: multiply;
     background-size: 60%;
 }
 

@@ -40,7 +40,7 @@ div#body div#main{
     border: 3px solid #eee;
     display: flex !important;
     margin: 5% 20%;
-    animation: float 5s ease-in-out infinite;
+    /* animation: float 5s ease-in-out infinite; */
 }
 
 @keyframes float {

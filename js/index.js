@@ -27,5 +27,6 @@ function renderProfile(){
 }
 
 $(() => {
+    $('[data-toggle="tooltip"]').tooltip();
     renderProfile();
 });

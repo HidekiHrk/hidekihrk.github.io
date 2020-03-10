@@ -1,5 +1,9 @@
 * {
     font-family: 'Oxanium', cursive;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
 }
 html, body {
     margin:0;

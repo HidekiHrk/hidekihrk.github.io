@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route} from "react-router-dom";
 import Header from "./templates/header";
 
 const Router = () => (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header/>
         <Switch>
             <Route exact path="/">
